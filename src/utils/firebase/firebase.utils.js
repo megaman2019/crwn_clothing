@@ -110,7 +110,7 @@ export const signOutUser = async () => await signOut(auth)
 
 export const onAuthStateChangedListener = async (callback) => {
   try {
-    onAuthStateChanged(auth, callback)
+    return onAuthStateChanged(auth, callback)
   } catch (error) {
     alert(error)
   }
